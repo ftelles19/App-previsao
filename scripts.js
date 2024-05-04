@@ -7,6 +7,7 @@ function mostrarInfos(dados){
     document.querySelector(".temperature").innerHTML = Math.floor(dados.main.temp) + "°C"
     document.querySelector(".description").innerHTML = dados.weather[0].description
     document.querySelector(".air-humidity").innerHTML = "Umidade: " + dados.main.humidity + "%"
+    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
 }
 
 async function buscarCidade(cidade){

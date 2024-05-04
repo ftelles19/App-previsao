@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,22 @@
 <body>
     <!--Seção para incluir a localidade-->
     <div class="container">
-        <input class="input-city" placeholder="Digite o nome da cidade">
+        <input class="input-city" placeholder="Digite o nome da cidade"
+            onkeydown="if(event.key==='Enter'){cliqueiNoBotao()}">
         <button onclick="cliqueiNoBotao()">
             <img class="image" src="https://www.svgrepo.com/show/488200/find.svg">
         </button>
-        
-    <!--Seção com informações sobre a localidade-->
+
+        <!--Seção com informações sobre a localidade-->
         <div class="weather-info">
             <h2 class="city">Tempo em Rio de Janeiro</h2>
             <p class="temperature">28°C</p>
-            <p class="description">Nuvens dispersas</p>
+
+            <div class="weather-description">
+                <img class="icon" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="description">Nuvens dispersas</p>
+            </div>
+
             <p class="air-humidity">Umidade: 70%</p>
         </div>
     </div>

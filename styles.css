@@ -48,7 +48,12 @@ button:hover {
 }
 
 .weather-info {
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.weather-description {
+    display: flex;
+    align-items: center;
 }
 
 .image {
